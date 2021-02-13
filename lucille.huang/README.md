@@ -4,5 +4,5 @@
 
 ### Importnat Links
 
-- https://mumumm.com
-- https://mumumm.com/aau/wnm608/lucille.huang
+- http://mumumm.com
+- http://mumumm.com/aau/wnm608/lucille.huang
