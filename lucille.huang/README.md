@@ -9,6 +9,7 @@
 
 ### Git Commands
 
+- git status
 - git add .
-- git commit - "messages"
+- git commit -m "messages"
 - git push origin main
