@@ -1,0 +1,162 @@
+/* CSS RESETS */
+
+*, *::before, *::after {
+   box-sizing:border-box;
+}
+
+:root {
+   --color-neutral-light:#e4e2e9;
+   --color-neutral-medium:#8c8894;
+   --color-neutral-dark:#423f4a;
+
+   --color-white:#fff;
+   --color-black:#111;
+
+
+   --header-height:3rem;
+
+
+   --font-sans: Helvetica, Arial, sans-serif;
+   --font-serif: Cambria, Georgia, "Times New Roman", serif;
+}
+
+body {
+   margin:0;
+   font-size:100%;
+   /*font-family:var(--font-sans);*/
+   font-family: Helvetica;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   /*font-family:var(--font-serif);*/
+   font-family: Helvetica;
+}
+
+a {
+   color:inherit;
+   font-weight:bold;
+   text-decoration:none;
+}
+a:hover {
+   text-decoration:underline;
+}
+
+
+
+
+/* LAYOUT CLASSES */
+.container {
+   /*max-width:1000px;*/
+   max-width: 80%;
+   /*height: 110px;*/
+   margin-left:auto;
+   margin-right:auto;
+}
+
+
+.hidden { display:none; }
+
+
+.display-flex { display:flex; }
+.display-block { display:block; }
+.display-inline-flex { display:inline-flex; }
+.display-inline-block { display:inline-block; }
+
+.flex-stretch { flex: 1 1 auto; }
+.flex-none { flex: none; }
+
+.flex-align-center { align-items:center; }
+.flex-justify-center { justify-content:center; }
+
+
+
+
+
+/* COMPONENT CLASSES */
+
+.navbar {
+   /*background-color:var(--color-neutral-dark);*/
+   background-color: #827253;
+   color:var(--color-white);
+   line-height:var(--header-height);
+}
+.navbar h1 {
+   /*font-family:var(--font-sans);*/
+   font-family: Helvetica;
+   /*font-size:1em;*/
+   font-size: 1.5em;
+   margin:0;
+}
+
+.nav ul,
+.navbar ul {
+   list-style-type:none;
+   margin:0;
+   padding-left:0;
+}
+
+.navbar a {
+   display:block;
+   padding:0 0.5em;
+}
+
+.navHeight {
+   height: 110px;
+}
+
+
+/* VIEW WINDOW */
+
+.view-window {
+   position:relative;
+   overflow:hidden;
+
+   background-size:cover;
+   background-position:center;
+   background-attachment:fixed;
+
+   height:70vh;
+}
+
+
+
+
+
+
+/* CARD */
+
+.card {
+   background-color:var(--color-white);
+   padding:1em;
+
+   margin-bottom:1em;
+   margin-top:1em;
+
+   position:relative;
+   overflow:hidden;
+}
+   .card.soft {
+      border-radius:0.5em;
+      /*box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);*/
+   }
+   .card.hard {
+      border-radius:0.2em;
+      border:2px solid var(--color-neutral-medium);
+   }
+   .card.dark {
+      /*background-color:var(--color-neutral-dark);*/
+      /*color:var(--color-white);*/
+      background-color: transparent;
+   }
+   .card.medium {
+      background-color:var(--color-neutral-medium);
+   }
+
+   .card.flat {
+      padding:0;
+   }
