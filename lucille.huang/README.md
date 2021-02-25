@@ -7,6 +7,7 @@
 - http://mumumm.com
 - http://mumumm.com/aau/wnm608/lucille.huang
 - http://mumumm.com/aau/wnm608/lucille.huang/recipes/index.html
+- http://mumumm.com/aau/wnm608/lucille.huang/product/index.html        
 
 ### Git Commands
 
