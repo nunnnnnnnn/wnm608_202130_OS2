@@ -133,15 +133,16 @@ a:hover {
 }
    .card.soft {
       border-radius:0.5em;
-      box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+      /*box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);*/
    }
    .card.hard {
       border-radius:0.2em;
       border:2px solid var(--color-neutral-medium);
    }
    .card.dark {
-      background-color:var(--color-neutral-dark);
-      color:var(--color-white);
+      /*background-color:var(--color-neutral-dark);*/
+      /*color:var(--color-white);*/
+      background-color: transparent;
    }
    .card.medium {
       background-color:var(--color-neutral-medium);
