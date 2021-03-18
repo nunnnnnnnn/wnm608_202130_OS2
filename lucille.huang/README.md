@@ -2,7 +2,7 @@
 
 ## Store Website
 
-### Importnat Links
+### Important Links
 
 - http://mumumm.com
 - http://mumumm.com/aau/wnm608/lucille.huang
