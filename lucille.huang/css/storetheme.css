@@ -1,7 +1,7 @@
 :root {
-   --color-neutral-light:#e9e2e5;
-   --color-neutral-medium:#94888e;
-   --color-neutral-dark:#4a3f43;
+   --color-neutral-light:#FFFFFA;
+   --color-neutral-medium:#F7F5F4;
+   --color-neutral-dark:#000000;
 }
 
 
@@ -12,10 +12,48 @@ body {
 
 
 
+
+/* PRODUCT IN LIST */
+.product {
+   margin:0;
+   /*padding:1em;*/
+   box-shadow:0 0 10px rgba(0,0,0,0.1);
+   border-radius:1em;
+   position:relative;
+   overflow:hidden;
+   background-color:white;
+   display:inline-block;
+   transition:all 0.3s;
+   font-weight:normal;
+}
+.product:hover {
+   text-decoration:none;
+   box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+.product-image img {
+   max-width:100%;
+   vertical-align:middle;
+}
+.product-caption {
+   padding:1em;
+   /*新加的*/
+   background-color: #CCCCCC;
+   text-align: center;
+
+}
+.product-price {
+   font-size:1em;
+}
+.product-title {
+   font-size:1em;
+}
+
+
+
+
+
 @media (max-width:500px) {
    :root {
       --header-height:2rem;
    }
 }
-
-

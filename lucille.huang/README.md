@@ -7,13 +7,14 @@
 - http://mumumm.com
 - http://mumumm.com/aau/wnm608/lucille.huang
 - http://mumumm.com/aau/wnm608/lucille.huang/recipes/index.html
-- http://mumumm.com/aau/wnm608/lucille.huang/product/index.html     
-- http://mumumm.com/aau/wnm608/lucille.huang/demo/grid.html
 - http://mumumm.com/aau/wnm608/lucille.huang/styleguide/
 
+#### Demo Links
+
+- http://mumumm.com/aau/wnm608/lucille.huang/demo/grid.html
 
 
-### Git Commands
+##### Git Commands
 
 - git status
 - git add .
