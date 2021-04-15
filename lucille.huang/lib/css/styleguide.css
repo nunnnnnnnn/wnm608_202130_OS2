@@ -87,6 +87,12 @@ a:hover {
    margin-right:auto;
 }
 
+.container2 {
+   text-align: center;
+   background-color: #F7F5F4;
+   padding: 5%;
+}
+
 
 .hidden { display:none; }
 
@@ -162,8 +168,10 @@ a:hover {
 
 /* Navbar */
 .navbar {
-   background-color:var(--color-neutral-dark);
-   color:var(--color-white);
+   /*background-color:var(--color-neutral-dark);*/
+   /*color:var(--color-white);*/
+   background-color:var(--color-white)
+   color:var(--color-neutral-dark);
    line-height:var(--header-height);
 }
 .navbar h1 {
@@ -199,9 +207,17 @@ a:hover {
    background-position:center;
    background-attachment:fixed;
 
-   height:70vh;
+   height:85vh;
 }
 
+
+/* IMAGES */
+.product-list {
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top: 2%;
+   margin-bottom: 2%
+}
 
 
 

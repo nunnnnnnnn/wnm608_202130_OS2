@@ -15,7 +15,7 @@ body {
 
 /* PRODUCT IN LIST */
 .product {
-   margin:0;
+   margin:0.5em;
    /*padding:1em;*/
    box-shadow:0 0 10px rgba(0,0,0,0.1);
    border-radius:1em;

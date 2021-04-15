@@ -1,139 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Naël</title>
+   <title>N a ë l</title>
+   
+   <?php include "parts/meta.php" ?>
 
-   <link rel="tab icon" href="img/tab.png">
-   <link rel="stylesheet" href="lib/css/styleguide.css">
-   <link rel="stylesheet" href="lib/css/gridsystem.css">
-   <link rel="stylesheet" href="css/storetheme.css">
-   <link rel="stylesheet" href="https://use.typekit.net/vqm5vww.css">
 </head>
+
+
 <body>
-   
-   <!-- header>h1+p -->
-   <!-- cmd + / -->
-   <!-- <header class="navbar">
-      <div class="container display-flex flex-align-center navHeight">
-         <div class="flex-none">
-            <h1>Naël</h1>
-         </div>
+   <?php include "parts/navbar.php" ?>
+   <?php include "parts/topattraction.php" ?>
+   <?php include "parts/explore.php" ?>
 
-         <div class="flex-stretch"></div>
+<!--    <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url(https://i.pinimg.com/originals/80/4c/6e/804c6ebaa34dafc933c0847d9ca1fd15.png)">
+      <h2 class="card soft dark">PRODUCT</h2>
+   </div> -->
 
-         <nav class="nav flex-none">
-            <ul class="display-flex">
-               <li><a href="#article1">New Arrivals</a></li>
-               <li><a href="#article2">Home</a></li>
-               <li><a href="#article3">Electronics</a></li>
-               <li><a href="#article4">Fitness</a></li>
-               <li><a href="#article4">Sale</a></li>
-            </ul>
-         </nav>
-      </div>
-   </header> -->
-   <script>
-   const makeNav = (classes='') => {
-      const links = ['New Arrivals','Home','Electronics','Fitness', 'Sale'];
-      document.write(`
-      <div>
-      <nav class="${classes}">
-         <ul>
-            ${links.reduce((r,o,i,a)=>r+`<li><a href="#">${o}</a></li>`,'')}
-         </ul>
-      </nav>
-      </div>
-      `);
-   }
-   </script>
+<!--     <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url(img/bg.jpg)">
+    	<div>
+			<h2 class="card soft dark attract">Key upgrades for working from home success</h2>
+         	<div class="DiscoverButtonDiv">
+           		<button>discover</button>
+         	</div>
+    	</div>
+    </div> -->
 
-   <script>
-   const makeNav2 = (classes='') => {
-      const links = ['SIGN IN','WISHLIST','BAG'];
-      document.write(`
-      <div>
-      <nav class="${classes}">
-         <ul>
-            ${links.reduce((r,o,i,a)=>r+`<li><a href="#">${o}</a></li>`,'')}
-         </ul>
-      </nav>
-      </div>
-      `);
-   }
-   </script>
-
-   <header class="navbar">
-      <div class="container display-flex flex-align-center">
-         <div style="margin: 0 auto">
-            <h1>Naël</h1>
-         </div>
-         <div class="pullright">
-            <script>makeNav2("nav flex")</script>
-         </div>
-            
-         </div>
-      </div>
-   </header>
-   <header class="navbar">
-      <div class="container display-flex flex-align-center">
-            <!-- 本來的 -->
-         <div style="margin: 0 auto">
-             <!-- 加了style -->
-            <script>makeNav("nav flex")</script>
-         </div>   
-      </div>
-   </header>
-
-
-   <!-- .container>article#article$.article*4>h2{Article $}+div.article-body>p*4>lorem40 -->
  
-    <div class="view-window display-flex flex-align-center flex-justify-center" style="background-image:url(img/bg.jpg)">
-         <h2 class="card soft dark">Key upgrades for working from home success</h2>
-    </div>
 
-    
+<!-- 
+Here is I make   
     <div class="container2">
-      <h4>E X P L O R E</h4>
-       <h2>The perfect small goods, for any stay home workers </h2>
-    </div>
+         <h5>E X P L O R E</h4>
+         <h2>The perfect small goods, for any stay home workers </h2>
+    </div> -->
 
    
-
-
-
-
-
-
-
-
-
-
-   <div class="grid gap product-list">
-      <div class="col-xs-12 col-md-6">
+    <div class="bgcontanier">
+    <div class="grid">
+        <div class="col-xs-12 col-md-2">
          <a href="#" class="product">
             <div class="product-image">
-               <img src="https://via.placeholder.com/600?text=Banana" alt="">
+               <img src="img/h1.jpg" alt="">
             </div>
             <figcaption class="product-caption">
-<!--                <div class="product-title">Banana</div>
-               <div class="product-price">&dollar;15</div> -->
-            </figcaption>
+               <div class="product-title">Ceramic Sculpture</div>
+<!--                <div class="product-price">&dollar;15</div>
+ -->            </figcaption>
          </a>
-      </div>
-      <div class="col-xs-12 col-md-6">
-         <figure class="product">
+        </div>
+        <div class="col-xs-12 col-md-2">
+         <a href="#" class="product">
             <div class="product-image">
-               <img src="https://via.placeholder.com/600?text=Banana" alt="">
+               <img src="img/h1.jpg" alt="">
             </div>
             <figcaption class="product-caption">
-<!--                <div class="product-title">Banana</div>
-               <div class="product-price">&dollar;15</div> -->
-            </figcaption>
-         </figure>
-      </div>
-   </div>
+               <div class="product-title">Bang & Olufsen Beosound A1</div>
+<!--                <div class="product-price">&dollar;15</div>
+ -->            </figcaption>
+         </a>        </div>
+        <div class="col-xs-12 col-md-2">
+         <a href="#" class="product">
+            <div class="product-image">
+               <img src="img/h1.jpg" alt="">
+            </div>
+            <figcaption class="product-caption">
+               <div class="product-title">Bala Bangles 1 LB Weighted Bangle</div>
+<!--                <div class="product-price">&dollar;15</div>
+ -->            </figcaption>
+         </a>        </div>
+        <div class="col-xs-12 col-md-2">
+         <a href="#" class="product">
+            <div class="product-image">
+               <img src="img/h1.jpg" alt="">
+            </div>
+            <figcaption class="product-caption">
+               <div class="product-title">Terracotta Plant Pot</div>
+<!--                <div class="product-price">&dollar;15</div>
+ -->            </figcaption>
+         </a>
+        </div>
+        <div class="col-xs-12 col-md-2">
+         <a href="#" class="product">
+            <div class="product-image">
+               <img src="img/h1.jpg" alt="">
+            </div>
+            <figcaption class="product-caption">
+               <div class="product-title">Terracotta Plant Pot</div>
+<!--                <div class="product-price">&dollar;15</div>
+ -->            </figcaption>
+         </a>
+        </div>
+        <div class="col-xs-12 col-md-2">
+         <a href="#" class="product">
+            <div class="product-image">
+               <img src="img/h1.jpg" alt="">
+            </div>
+            <figcaption class="product-caption">
+               <div class="product-title">Bang & Olufsen Beosound Balance</div>
+<!--                <div class="product-price">&dollar;15</div>
+ -->            </figcaption>
+         </a>
+        </div>
+     </div>
+</div>
+
+
+
+   <?php include "parts/attraction.php" ?>
+   <?php include "parts/Discover.php" ?>
+   <?php include "parts/story.php" ?>
+   <?php include "parts/footer.php" ?>
+
+
+
+<!-- 
+       <div class="container2">
+         <h2>Ready to explore more?</h2>
+         <div class="flex-none">
+             <botton type="button" class="form-button more"><h5>D I S C O V E R</h5></botton>
+         </div>
+    </div> -->
+
+
+
 <!--    <div class="container">
       <article id="article1" class="article card soft">
          <h2>Article 1</h2>
@@ -177,6 +167,8 @@
          </div>
       </article>
    </div> -->
+
+
 
 </body>
 </html>

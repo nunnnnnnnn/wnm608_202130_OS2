@@ -1,0 +1,32 @@
+/*mainpage*/
+
+.bgcontanier {
+	background-color: #F7F5F4;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+
+.attract {
+    font-size:3.7em;
+    background-color:transparent !important;
+}
+
+.DiscoverButtonDiv {
+    justify-content: center;
+    display: flex;
+}
+.DiscoverButtonDiv button{
+	background-color: transparent;
+    color: white;
+    border: solid 1px transparent;
+    border-bottom: solid 1px white;
+    padding-bottom: 3px; 
+
+}
+.DiscoverButtonDiv button:hover{
+	border-bottom: solid 2px white;
+    cursor: pointer;
+}
