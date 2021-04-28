@@ -31,13 +31,13 @@
    },
    {
       "name":"King Kong",
-      "type":"Student",
+      "type":"Hero",
       "email":"Kingkongisking@gmail.com",
       "classes":[622,606,608]
    },
    {
       "name":"Gozilla Kim",
-      "type":"Student",
+      "type":"Hero",
       "email":"gozillaiskim@gmail.com",
       "classes":[622,606,608]
    },
