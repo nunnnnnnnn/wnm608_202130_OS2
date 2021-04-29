@@ -28,5 +28,12 @@ functioin MYSQLConn() {
 function MYSQLIQuery($sql) {
 	$conn = MYSQLIConn();
 
+	$a =[];
 
+	$result = $conn->query($sql);
+
+	while($row = $result->fetch_object()) {
+		$a[] = $row;
+	}
+	return $a;
 }

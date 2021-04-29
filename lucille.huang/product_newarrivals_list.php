@@ -16,7 +16,4 @@ include "lib/php/functions.php"
    <?php include "parts/navbar.php" ?>
 </body>
 
-
-
-
 </html>
