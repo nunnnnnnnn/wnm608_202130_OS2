@@ -8,6 +8,40 @@
 
 }
 
+/*<-- footer -->
+*/
+
+.footercontanier {
+ background-color: #000000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+.footer-category {
+   font-size:1em;
+   color: #white;
+}
+
+
+
+.view-window2 {
+/*  osition: relative;
+    overflow: hidden;*/
+    /* background-size: cover; */
+    /* background-position: center; */
+/*    background-attachment: fixed;
+*/    height: 54vh;
+}
+
+.product-caption3 { 
+   background-color: transparent;
+   text-align: center;
+   top: -30em;
+   position: relative;
+   height: 0px;
+}
 
 .attract {
     font-size:3.7em;
@@ -18,15 +52,147 @@
     justify-content: center;
     display: flex;
 }
+
 .DiscoverButtonDiv button{
 	background-color: transparent;
     color: white;
     border: solid 1px transparent;
     border-bottom: solid 1px white;
     padding-bottom: 3px; 
-
 }
+
 .DiscoverButtonDiv button:hover{
 	border-bottom: solid 2px white;
     cursor: pointer;
 }
+
+.DiscoverButtonDiv2 {
+  justify-content: center;
+  display: flex;
+  color: black;
+}
+
+.DiscoverButtonDiv2 button{
+  background-color: transparent;
+    color: black;
+    border: solid 1px transparent;
+    border-bottom: solid 1px white;
+    padding-bottom: 3px; 
+}
+
+.DiscoverButtonDiv button:hover{
+  border-bottom: solid 2px white;
+    cursor: pointer;
+    color:black;
+}
+
+
+.navbarHI {
+    margin: 5%;
+    background-color:white ;
+}
+
+
+
+
+
+
+
+
+
+
+
+.story {
+   margin:0.8em;
+   /*padding:1em;*/
+/*   box-shadow:0 0 10px rgba(0,0,0,0.1);
+*/   
+   /*border-radius:1em;*/
+   position:relative;
+   overflow:hidden;
+/*   background-color:white;
+*/   display:inline-block;
+   transition:all 0.3s;
+   font-weight:normal;
+}
+
+.story-caption {
+   padding:1em;
+   background-color: transparent;
+   text-align: left;
+   color:#707070;
+}
+
+.story-title {
+   font-size:1em;
+   color:#707070;
+}
+
+.story-content {
+   font-size:1em;
+   color:#707070;
+}
+
+.product-contanier {
+    background-color: #F7F5F4;
+    padding-top: 1%;  
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.product-contanier2 {
+    background-color: white;
+    padding-top: 1%;  
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.discover2 {
+   text-align: center;
+   background-color: white;
+   padding: 5%;
+}
+
+.story-contanier {
+   text-align: center;
+   background-color: #F7F5F4;
+   padding-top: 5%;  
+   padding-bottom: 0.1%;
+}
+
+.container3 {
+   text-align: center;
+   background-color: white;
+   padding-top: 5%;  
+   padding-bottom: 0.1%;
+}
+
+.container4 {
+   text-align: center;
+   background-color: white;
+   padding-top: 5%;  
+   padding-bottom: 0.1%;
+}
+
+
+
+.attraction-contanier {
+    background-color: white;
+    padding-top: 1%;  
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+
+.border-rounding {
+  border-radius: 1em;
+}
+
+
+
+

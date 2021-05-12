@@ -1,3 +1,14 @@
+<?php 
+
+include "php/mysql.php";
+
+$res = msysqlQ("SELECT * FROM products ORDER BY id ASC LIMIT 2");
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,12 +47,15 @@ Here is I make
     </div> -->
 
    
-    <div class="bgcontanier">
+  <div class="bgcontanier">
     <div class="grid">
         <div class="col-xs-12 col-md-2">
-         <a href="#" class="product">
+         <a href="product_Home_list.php" class="product">
+            <figcaption class="product-caption">
+               <div class="prodct-category">H O M E</div>
+             </figcaption>
             <div class="product-image">
-               <img src="img/h1.jpg" alt="">
+               <img src="img/homepage/h1.jpg" alt="h1">
             </div>
             <figcaption class="product-caption">
                <div class="product-title">Ceramic Sculpture</div>
@@ -49,125 +63,160 @@ Here is I make
  -->            </figcaption>
          </a>
         </div>
+
         <div class="col-xs-12 col-md-2">
-         <a href="#" class="product">
+         <a href="product_Home_list.php" class="product">
+          <figcaption class="product-caption">
+               <div class="prodct-category">H O M E</div>
+             </figcaption>
             <div class="product-image">
-               <img src="img/h1.jpg" alt="">
+               <img src="img/homepage/h4.jpeg" alt="h4">
             </div>
             <figcaption class="product-caption">
-               <div class="product-title">Bang & Olufsen Beosound A1</div>
-<!--                <div class="product-price">&dollar;15</div>
- -->            </figcaption>
-         </a>        </div>
-        <div class="col-xs-12 col-md-2">
-         <a href="#" class="product">
-            <div class="product-image">
-               <img src="img/h1.jpg" alt="">
-            </div>
-            <figcaption class="product-caption">
-               <div class="product-title">Bala Bangles 1 LB Weighted Bangle</div>
-<!--                <div class="product-price">&dollar;15</div>
- -->            </figcaption>
-         </a>        </div>
-        <div class="col-xs-12 col-md-2">
-         <a href="#" class="product">
-            <div class="product-image">
-               <img src="img/h1.jpg" alt="">
-            </div>
-            <figcaption class="product-caption">
-               <div class="product-title">Terracotta Plant Pot</div>
+               <div class="product-title">Jute Doormat</div>
 <!--                <div class="product-price">&dollar;15</div>
  -->            </figcaption>
          </a>
         </div>
+
+
+
         <div class="col-xs-12 col-md-2">
-         <a href="#" class="product">
+         <a href="product_Electonics_list.php" class="product">
+            <figcaption class="product-caption">
+               <div class="prodct-category">E L E C T O N I C S</div>
+             </figcaption>
             <div class="product-image">
-               <img src="img/h1.jpg" alt="">
+               <img src="img/homepage/h2.png" alt="h2">
             </div>
             <figcaption class="product-caption">
-               <div class="product-title">Terracotta Plant Pot</div>
+               <div class="product-title">Bang & Olufsen Speaker</div>
+<!--                <div class="product-price">&dollar;15</div>
+ -->            </figcaption>
+         </a>       
+        </div>
+
+       
+
+
+        <div class="col-xs-12 col-md-2">
+         <a href="product_newarrivals_list.php" class="product">
+            <figcaption class="product-caption">
+               <div class="prodct-category">N E W&emsp;A R R I V A L S</div>
+             </figcaption>
+            <div class="product-image">
+               <img src="img/homepage/h5.jpeg" alt="h5">
+            </div>
+            <figcaption class="product-caption">
+               <div class="product-title">Handmade Basket</div>
 <!--                <div class="product-price">&dollar;15</div>
  -->            </figcaption>
          </a>
         </div>
+
         <div class="col-xs-12 col-md-2">
-         <a href="#" class="product">
+         <a href="product_Fitness_list.php" class="product">
+           <figcaption class="product-caption">
+               <div class="prodct-category">F I T N E S S</div>
+             </figcaption>
             <div class="product-image">
-               <img src="img/h1.jpg" alt="">
+               <img src="img/homepage/h3.png" alt="h3">
             </div>
             <figcaption class="product-caption">
-               <div class="product-title">Bang & Olufsen Beosound Balance</div>
+               <div class="product-title">Bala 1 LB Weighted Bangle</div>
 <!--                <div class="product-price">&dollar;15</div>
  -->            </figcaption>
+         </a>        
+       </div>
+
+
+      <div class="col-xs-12 col-md-2">
+         <a href="product_Electonics_list.php" class="product">
+            <figcaption class="product-caption">
+               <div class="prodct-category">E L E C T O N I C S</div>
+             </figcaption>
+            <div class="product-image">
+               <img src="img/homepage/h6.jpg" alt="h6">
+            </div>
+            <figcaption class="product-caption">
+               <div class="product-title">Kreafunk Charge Mini</div>
+<!--                <div class="product-price">&dollar;15</div>
+ -->        </figcaption>
          </a>
         </div>
+
+
      </div>
 </div>
 
 
 
+
+
    <?php include "parts/attraction.php" ?>
    <?php include "parts/Discover.php" ?>
-   <?php include "parts/story.php" ?>
+
+
+
+    <div class="story-contanier">
+         <h5>S T O R Y</h4>
+         <h2>See latest style by our customers from the world</h2>
+    </div>
+
+
+    <div class="bgcontanier">
+    <div class="grid">
+        <div class="col-xs-12 col-md-4">
+         <div class="story">
+<!--             <figcaption class="product-caption">
+               <div class="prodct-category">H O M E</div>
+             </figcaption> -->
+            <div class="product-image">
+               <img src="img/homepage/S1.png" alt="S1">
+            </div>
+            <figcaption class="story-caption">
+               <div class="story-title">@canancavintage&emsp;February 24, 2021</div>
+               <div class="story-content">#Naël #home #decorationideas #homedecor #myhmhome #designer #inspohome #inspo #livingroomdecor　</div>
+              </figcaption>
+         </div>
+        </div>
+
+
+        <div class="col-xs-12 col-md-4">
+         <div class="story">
+<!--             <figcaption class="product-caption">
+               <div class="prodct-category">H O M E</div>
+             </figcaption> -->
+            <div class="product-image">
+               <img src="img/homepage/S2.png" alt="S2">
+            </div>
+            <figcaption class="story-caption">
+               <div class="story-title">@villalove45&emsp;March 9, 2021</div>
+               <div class="story-content">Å våkne til sol som sniker seg inn i sprekker mellom gardinene, forsterker bare følelsen om at våren er på vei</div>          
+             </figcaption>
+         </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+         <div class="story">
+<!--             <figcaption class="product-caption">
+               <div class="prodct-category">H O M E</div>
+             </figcaption> -->
+            <div class="product-image">
+               <img src="img/homepage/S3.png" alt="S3">
+            </div>
+            <figcaption class="story-caption">
+               <div class="story-title">@kei.gunji&emsp;April 24, 2021</div>
+               <div class="story-content">Naëlストの Beosound Balance-「録音スタジオの再現」を目指すB&Oには両手かっちりの演奏がお勧め。ポリーニのショパン練習曲集(1972)なんてどうでしょう？</div>
+            </figcaption>
+         </div>
+        </div>
+</div>
+</div>
+
+
+
    <?php include "parts/footer.php" ?>
-
-
-
-<!-- 
-       <div class="container2">
-         <h2>Ready to explore more?</h2>
-         <div class="flex-none">
-             <botton type="button" class="form-button more"><h5>D I S C O V E R</h5></botton>
-         </div>
-    </div> -->
-
-
-
-<!--    <div class="container">
-      <article id="article1" class="article card soft">
-         <h2>Article 1</h2>
-         <div class="article-body">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At rem mollitia cupiditate consectetur dolorem, quaerat. Nihil sunt ullam harum ex id quam ipsum, amet molestiae. Molestias porro, cupiditate, nostrum, a aliquid, expedita alias hic voluptatem similique nihil sunt voluptatum magni!</p>
-            <p>Soluta, nisi ipsam quas accusantium ducimus! Excepturi reprehenderit nulla, similique eligendi consequuntur beatae iste sint cumque corrupti explicabo sequi recusandae quae possimus quaerat, neque ut accusamus dolorem optio cum ullam! Facilis quaerat veritatis laborum, voluptatum a pariatur explicabo ea esse?</p>
-            <p>Incidunt est, modi et! Totam ea odit nobis doloribus deleniti culpa veniam autem perferendis, recusandae sapiente a nam ullam officiis perspiciatis quod dignissimos, in, corrupti quas. Inventore consequatur, quaerat laboriosam quidem velit deleniti totam similique eveniet quisquam dolore maxime, ut!</p>
-            <p>Esse quibusdam officia id, minima obcaecati soluta, expedita in repellendus ex maxime eius dignissimos illo, accusamus delectus unde quos! Quia est, animi iusto sequi qui corrupti molestias sunt expedita, obcaecati, possimus voluptates veniam! Placeat perferendis, ratione vel. Nam, natus optio?</p>
-         </div>
-      </article>
-   </div>
-
-
-
-   <div class="container">
-      <article id="article2" class="article card hard">
-         <h2>Article 2</h2>
-         <div class="article-body">
-            <p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Dicta odio consequuntur, doloribus error minima veniam, eos perferendis explicabo esse illum dignissimos nesciunt sed, laudantium quidem aliquam et, possimus harum quisquam! Eum dicta, adipisci! Ratione nemo sed quo iusto unde atque?</p>
-            <p>Voluptas numquam optio accusamus suscipit soluta enim cupiditate officia? Voluptatum odio autem vel ab perferendis debitis corrupti, neque fugiat sequi earum. Suscipit, deserunt. Labore nihil voluptas rerum, porro earum aliquam nisi dignissimos illum, tempora tempore quod ullam quis soluta totam.</p>
-            <p>A fuga beatae voluptatem, totam non eum! Dicta facere eaque, necessitatibus reiciendis ducimus nihil velit neque repellat blanditiis perferendis assumenda deleniti laborum, magnam minima natus, excepturi quia quis magni, sapiente ut doloribus nostrum ipsam quos consequuntur autem. Beatae, illum, ducimus?</p>
-            <p>Quisquam, consequatur. Repellendus doloribus, ullam aspernatur blanditiis, quam fuga earum sunt velit tempora inventore recusandae. Asperiores tenetur exercitationem ullam eveniet, eos ipsa doloremque, error, doloribus soluta hic aliquam tempora omnis sunt ipsam animi, qui commodi libero veritatis quis saepe aperiam.</p>
-         </div>
-      </article>
-      <article id="article3" class="article card">
-         <h2>Article 3</h2>
-         <div class="article-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus deleniti aperiam sunt. Nam nihil iure ipsa consequatur cum aliquid at. Maxime quisquam, animi tempore. Enim ea quia, quos eligendi ullam praesentium tempora, ipsa esse, excepturi eius, dignissimos iure? A, eum.</p>
-            <p>Tempora nulla dicta voluptatibus, corrupti ad quidem mollitia architecto necessitatibus tempore soluta fuga obcaecati cumque totam cum, laudantium molestiae. Consequuntur quo nihil quia libero ratione similique alias eligendi reiciendis labore et nesciunt adipisci aliquid tempora, beatae nobis molestiae quidem. Ipsam.</p>
-            <p>Nesciunt, consequuntur explicabo voluptatem inventore, vitae illum in adipisci aperiam laudantium quos officiis, fugiat velit ex saepe delectus maiores modi a quis, earum esse dolores voluptate facilis provident. Nobis illo eaque, quasi tempora error, autem laudantium necessitatibus architecto magnam quis.</p>
-            <p>Dignissimos itaque eum cumque dolores iste unde illum ipsa architecto, asperiores quasi alias! Soluta sequi voluptatem dolor, consequuntur aut at quas excepturi assumenda amet officiis ipsam temporibus inventore maxime, ipsum ab? Cumque quibusdam tenetur quos nobis? Nam, nesciunt omnis eligendi!</p>
-         </div>
-      </article>
-      <article id="article4" class="article card">
-         <h2>Article 4</h2>
-         <div class="article-body">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore saepe laborum dicta, asperiores ex nihil id, enim sapiente corrupti debitis eum ducimus non, praesentium cum. Doloremque quisquam natus, inventore unde aut, libero pariatur. Molestiae, fuga maiores, error iusto atque deserunt.</p>
-            <p>Neque, dicta. Numquam, aut at quis minima optio dicta eius minus earum veritatis obcaecati deserunt molestiae vitae dolor aliquam ex aliquid architecto tempore itaque quae quod a! Autem dolores, harum nemo perspiciatis laboriosam beatae rem minima quam repellendus eum temporibus.</p>
-            <p>Dolorem, recusandae, quos quas qui maiores voluptas repellendus in! Eaque et dolorum, animi? Quas architecto optio excepturi! Inventore obcaecati consectetur, repudiandae ratione quaerat dolores esse at maxime impedit assumenda alias, qui perferendis, minus necessitatibus magnam asperiores dolorem? Numquam provident, deleniti!</p>
-            <p>Necessitatibus deleniti labore iste nam nobis voluptatem accusamus, modi qui non mollitia reiciendis natus sint veniam maxime provident dolore fugit asperiores unde eos nesciunt velit? Atque similique voluptatem, est delectus, explicabo consequatur autem, impedit, recusandae unde quae laboriosam libero repellendus?</p>
-         </div>
-      </article>
-   </div> -->
-
 
 
 </body>

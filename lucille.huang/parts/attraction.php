@@ -1,24 +1,31 @@
-   <div class="grid gap product-list">
+<!--    <div class="grid gap product-list"> -->
+
+   <div class="grid gap product-list">  
       <div class="col-xs-12 col-md-6">
-         <a href="#" class="product">
+         <a href="product_Electonics_list.php" class="product">
             <div class="product-image">
-               <img src="https://via.placeholder.com/600?text=Banana" alt="">
+               <img src="img/homepage/attraction1-1.png" alt="attraction1-1">
             </div>
-            <figcaption class="product-caption">
-<!--                <div class="product-title">Banana</div>
-               <div class="product-price">&dollar;15</div> -->
-            </figcaption>
          </a>
       </div>
+
+
       <div class="col-xs-12 col-md-6">
-         <figure class="product">
+         <a href="product_Fitness_list.php" class="product">
             <div class="product-image">
-               <img src="https://via.placeholder.com/600?text=Banana" alt="">
+               <img src="img/homepage/attraction2-1.png" alt="attraction2-1.png">
             </div>
-            <figcaption class="product-caption">
-<!--                <div class="product-title">Banana</div>
-               <div class="product-price">&dollar;15</div> -->
-            </figcaption>
-         </figure>
+         </a>
       </div>
+
+
+      <div class="col-xs-12 col-md-12">
+         <a href="product_Home_list.php" class="product">
+            <div class="product-image">
+               <img src="img/homepage/attraction3-1.png" alt="attraction3-1.png">
+            </div>
+         </a>
+      </div>
+
    </div>
+</div>

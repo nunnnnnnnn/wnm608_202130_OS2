@@ -23,11 +23,11 @@
       <div>
       <nav class="${classes}">
          <ul>
-            <li><a href="#product_newarrivals_list.php">New Arrivals</a></li>
-            <li><a href="#product_Home_list.php">Home</a></li>
-            <li><a href="#product_Electonics_list.php">Electronics</a></li>
-            <li><a href="#product_Fitness_list.php">Fitness</a></li>
-            <li><a href="#product_Sales_list.php">Sale</a></li>
+            <li><a href="product_newarrivals_list.php">New Arrivals</a></li>
+            <li><a href="product_Home_list.php">Home</a></li>
+            <li><a href="product_Electonics_list.php">Electronics</a></li>
+            <li><a href="product_Fitness_list.php">Fitness</a></li>
+            <li><a href="product_Sales_list.php">Sale</a></li>
          </ul>
       </nav>
       </div>
@@ -53,6 +53,7 @@
    <header class="navbar">
       <div class="container display-flex flex-align-center">
          <div style="margin: 0 auto">
+            
             <h1>Naël</h1>
          </div>
          <div class="pullright">

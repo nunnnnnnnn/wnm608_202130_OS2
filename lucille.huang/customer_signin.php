@@ -2,7 +2,9 @@
 
 include "lib/php/functions.php"
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
    <title>N a ë l</title>

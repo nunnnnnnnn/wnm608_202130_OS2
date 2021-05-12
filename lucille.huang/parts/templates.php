@@ -1,19 +1,17 @@
 <?php
 
-function makeProductList($r,$o) {
-return $r.<<<HTML
-<div class="col-xs-12 col-sm-6 col-md-4">
-   <a href="product_item.php?id=$o->id" class="product">
+function makeProductList($product) {
+return '<div class="col-xs-12 col-md-3">
+   <a href="product_item.php?id=' . $product->id . '" class="product">
       <div class="product-image">
-         <img src="/images/store/$o->image_thumb" alt="">
+         <img src="' . $product->thumbnail . '" alt="">
+         <figcaption class="product-caption2">
+            <div class="product-price">&dollar;' . $product->price . '</div>
+            <div class="product-title">' . $product->name . '</div>
+         </figcaption>
       </div>
-      <figcaption class="product-caption">
-         <div class="product-price">&dollar;$o->price</div>
-         <div class="product-title">$o->title</div>
-      </figcaption>
-   </a>
-</div>
-HTML;
+    </a>
+</div>';
 }
 
 
@@ -23,10 +21,10 @@ function makeCartList($r,$o) {
 return $r.<<<HTML
 <div class="display-flex">
    <div class="flex-none image-thumbs">
-      <img src="/images/store/$o->image_thumb">
+      <img src="$o->thumbnail">
    </div>
    <div class="flex-stretch">
-      <strong>$o->title</strong>
+      <strong>$o->name</strong>
       <div>Delete</div>
    </div>
    <div class="flex-none">
@@ -35,3 +33,5 @@ return $r.<<<HTML
 </div>
 HTML;
 }
+
+
