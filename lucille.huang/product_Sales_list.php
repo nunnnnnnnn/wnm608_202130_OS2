@@ -4,6 +4,8 @@ include "lib/php/functions.php";
 include "parts/templates.php";
 // 每次點點看前面 //
 
+$products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'sale' LIMIT 12");
+
 ?>
 
 <!DOCTYPE html>
@@ -58,6 +60,7 @@ include "parts/templates.php";
    </div>
 
 </div>
+
 
 
 

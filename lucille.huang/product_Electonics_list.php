@@ -4,6 +4,9 @@ include "lib/php/functions.php";
 include "parts/templates.php";
 // 每次點點看前面 //
 
+$products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'Electronics' LIMIT 12");
+
+
 ?>
 
 <!DOCTYPE html>
@@ -32,23 +35,26 @@ include "parts/templates.php";
 
 
 <!-- < product    -->
-    <div class="product-contanier2 grid">
-      <div class="col-xs-12 col-md-6">
-         <a href="product_Electonics_list.php" class="product">
-            <div class="product-image">
-               <img src="img/products/images/electronics/R2.png" alt="home_r2">
-            </div>
-         </a>
-      </div>
+    <div class="product-contanier grid">
             
 
     <?php
 
-    $products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'Electronic'");
-    echo "<script>console.log('" . json_encode($products) . "');</script>";
 
+      $marketingBreaks = 2;
+    for($i = 0; $i < count($products); $i++) {
 
-    echo array_reduce($products,'makeProductList'); 
+      if ($i % 8 == 0) {
+         echo '<div class="col-xs-12 col-md-6">
+            <div class="product-image product">
+               <img src="img/products/images/electronics/R' . $marketingBreaks . '.png" alt="electronics_r' . $marketingBreaks . '">
+            </div>
+         </div>';
+         $marketingBreaks++;
+      }
+
+      echo makeProductList($products[$i]);
+    }
     
     ?>
    </div>
