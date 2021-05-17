@@ -23,11 +23,11 @@
       <div>
       <nav class="${classes}">
          <ul>
-            <li><a href="product_newarrivals_list.php">New Arrivals</a></li>
-            <li><a href="product_Home_list.php">Home</a></li>
-            <li><a href="product_Electonics_list.php">Electronics</a></li>
-            <li><a href="product_Fitness_list.php">Fitness</a></li>
-            <li><a href="product_Sales_list.php">Sale</a></li>
+            <li><a href="product_newarrivals_list.php">&emsp;New&emsp;Arrivals&emsp;&emsp;</a></li>
+            <li><a href="product_Home_list.php">&emsp;Home&emsp;&emsp;</a></li>
+            <li><a href="product_Electonics_list.php">&emsp;Electronics&emsp;&emsp;</a></li>
+            <li><a href="product_Fitness_list.php">&emsp;Fitness&emsp;&emsp;</a></li>
+            <li><a href="product_Sales_list.php">&emsp;Sale&emsp;&emsp;</a></li>
          </ul>
       </nav>
       </div>
@@ -37,12 +37,13 @@
 
    <script>
    const makeNav2 = (classes='') => {
-      const links = ['SIGN IN','WISHLIST','BAG'];
+      const links = ['WISHLIST','BAG'];
       document.write(`
       <div>
       <nav class="${classes}">
          <ul>
-            ${links.reduce((r,o,i,a)=>r+`<li><a href="#">${o}</a></li>`,'')}
+            <li><a href="wishlist.php">Wish List</a></li>
+            <li><a href="customer_bag.php">Bag</a></li>
          </ul>
       </nav>
       </div>

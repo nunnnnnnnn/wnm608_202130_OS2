@@ -3,9 +3,11 @@
 include "lib/php/functions.php";
 include "parts/templates.php";
 
+//resetCart();
+//pretty_dump(getCart());
 
+$cart = getCartItems();
 
-$cart = MYSQLIQuery("SELECT * FROM `products` WHERE `id` IN (5,9,13)");
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -23,7 +25,7 @@ $cart = MYSQLIQuery("SELECT * FROM `products` WHERE `id` IN (5,9,13)");
 
 
 <!--cart content recording 4/22 2;00-->
-<div class="bag-contanier">
+<!-- <div class="bag-contanier">
     <div class="grid">
       <div class="col-xs-12 col-md-3">
          <div class="footer">
@@ -50,8 +52,8 @@ $cart = MYSQLIQuery("SELECT * FROM `products` WHERE `id` IN (5,9,13)");
       </div>
     </div>
 </div>
-</div>
-
+</div> -->
+<!-- your bag-->
 <div class="bag3">
 	<h2>Your Bag</h2>
 </div>
@@ -64,11 +66,18 @@ $cart = MYSQLIQuery("SELECT * FROM `products` WHERE `id` IN (5,9,13)");
       <div class="col-xs-12 col-md-6">
          <div class="footer">
             <figcaption class="footer-caption">
-               <div class="bag-category">T O T A L
+               <div class="bag-category">
 
+               	 <?php
 
+               if(!count($cart)) {
+                  echo "<div class='card-section'>No Items In Cart Yet.</div>";
+               }
+               else {
+                  echo array_reduce($cart,'makeCartList');
+               }
 
-
+               ?>
 
 
 
@@ -86,7 +95,7 @@ $cart = MYSQLIQuery("SELECT * FROM `products` WHERE `id` IN (5,9,13)");
                <div class="bag-category">S H I P P I N G</div>
                <div class="bag-category">T O T A L</div>
 
-               	<div class="form-button sell">C O N T I N U E&emsp;T O&emsp;C H E C K O U T</div>
+               	<a class="form-button sell" = href="product_checkout.php">C O N T I N U E&emsp;T O&emsp;C H E C K O U T</a>
 
             </figcaption>
           </a>

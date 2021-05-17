@@ -1,6 +1,10 @@
 <?php
 
 include "lib/php/functions.php";
+$product_id = $_GET['id'];
+$product = MYSQLIQuery("SELECT * FROM `products` WHERE `id` = $product_id");
+$id = $product[0]->id;
+
 
 ?>
 
@@ -112,7 +116,11 @@ include "lib/php/functions.php";
 
 
 <div class="form-select">
-<select>
+
+<form action="customer_action.php?crud=add-to-cart" method="post">
+<input type="hidden" name="id" value=<?php echo "$id";?>>
+<select name="amount">
+	 <!-- option[value='$']*10>{$} -->
 	<option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -127,10 +135,11 @@ include "lib/php/functions.php";
 </div>
 
 			<div class="item-other">
-				<a href="customer_added_to_cart.php" class="form-button sell"> 
+				<button type="submit" class="form-button sell"> 
 				Add to Bag			
-				</a>
+				</button>
 			</div>
+		</form>
 
 			<div class="item-other"> 
 <!-- 			keep this empty
