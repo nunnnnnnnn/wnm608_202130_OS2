@@ -16,7 +16,19 @@ include "lib/php/functions.php"
    <?php include "parts/navbar.php" ?>
 </body>
 
+<!-- Cart content -->
 
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+    <?php include "parts/footer.php" ?>
 
 
 </html>

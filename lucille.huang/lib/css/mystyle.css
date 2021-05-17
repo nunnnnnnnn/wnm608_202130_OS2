@@ -8,28 +8,170 @@
 
 }
 
-/*<-- footer -->
-*/
 
-.footercontanier {
- background-color: #000000;
+
+/*Item Page*/
+
+.itemnav {
+    background-color: #FFFFFF;
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 5%;
     padding-right: 5%;
-
 }
+
+.itemsell-contanier {
+    background-color: white;
+    padding-top: 1%;  
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.item-contanier {
+  background-color: transparent;
+  padding-left: 10%;
+}
+
+.item-title {
+  background-color: transparent;
+  padding-top: 1%;
+  font-size: 1.7em;
+}
+
+
+.item-price {
+  background-color: transparent;
+  padding-top: 2%;
+  font-size: 1.5em;
+}
+
+.item-other {
+  background-color: transparent;
+  color:#707070;
+    padding-top: 10%;
+}
+
+.item-none {
+  background-color: transparent;
+  color: black;
+}
+.item-none2 {
+  background-color: transparent;
+padding-top: 0.5%;
+    padding-bottom: 2%;
+  color: #707070;
+}
+
+.details {
+   text-align: center;
+   background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+
+.details-contanier {
+   text-align: center;
+   background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.maylike {
+   text-align: center;
+   background-color: #F7F5F4;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* Bag */
+.bag-contanier {
+    background-color: #F7F5F4;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.bag-category {
+   font-size:1em;
+   color: black;
+}
+
+.bag3 {
+    background-color: #F7F5F4;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+
+
+.bag-price {
+  background-color: transparent;
+  padding-left: 10%;
+}
+
+
+
+
+/*<-- footer -->*/
+
+.footercontanier {
+    background-color: #000000;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+}
+
 .footer-category {
    font-size:1em;
-   color: #white;
+   color: white;
 }
+
+.footer-caption {
+  margin: 1em;
+}
+
+.footer-caption2 {
+  margin: 1em;
+  text-align: right;
+}
+
+.footer-title {
+  font-size: 1em;
+  padding-bottom: 1%;
+}
+
+.upperline {
+  border-top: solid 1px gray;
+  margin: 2em 0 2em 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
 .view-window2 {
-/*  osition: relative;
+/*  position: relative;
     overflow: hidden;*/
-    /* background-size: cover; */
+     background-size: cover; 
+     position: relative;
     /* background-position: center; */
 /*    background-attachment: fixed;
 */    height: 54vh;

@@ -4,7 +4,7 @@ include "lib/php/functions.php";
 include "parts/templates.php";
 // 每次點點看前面 //
 
-$products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'Home' LIMIT 12");
+$products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'Home'   LIMIT 12");
 
 ?>
 
@@ -34,7 +34,7 @@ $products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'Home' LIMI
 </div>
 
 
-<!-- products    -->
+<!-- products     last revise May 8th 2:30am --> 
     <div class="product-contanier grid">
       
             

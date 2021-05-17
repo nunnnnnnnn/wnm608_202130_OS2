@@ -1,6 +1,8 @@
 <?php 
 
 include "php/mysql.php";
+include "lib/php/functions.php";
+include "parts/templates.php";
 
 $res = msysqlQ("SELECT * FROM products ORDER BY id ASC LIMIT 2");
 
