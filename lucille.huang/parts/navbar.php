@@ -23,7 +23,7 @@
       <div>
       <nav class="${classes}">
          <ul>
-            <li><a href="product_newarrivals_list.php">&emsp;New&emsp;Arrivals&emsp;&emsp;</a></li>
+            <li><a href="product_newarrivals_list.php">&emsp;New Arrivals&emsp;&emsp;</a></li>
             <li><a href="product_Home_list.php">&emsp;Home&emsp;&emsp;</a></li>
             <li><a href="product_Electonics_list.php">&emsp;Electronics&emsp;&emsp;</a></li>
             <li><a href="product_Fitness_list.php">&emsp;Fitness&emsp;&emsp;</a></li>
