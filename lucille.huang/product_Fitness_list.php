@@ -72,15 +72,15 @@ $products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'Fitness' L
       <div class="col-xs-12 col-md-6">
          <a href="product_Electonics_list.php" class="product">
             <div class="product-image">
-               <img src="img/products/img/fitness/R4.png" alt="R4">
+               <img src="img/products/images/fitness/R4.png" alt="R4">
             </div>
          </a>
       </div>
 
       <div class="col-xs-12 col-md-6">
-         <a href="product_Fitness_list.php" class="product">
+         <a href="product_Home_list.php" class="product">
             <div class="product-image">
-               <img src="img/products/img/fitness/R5.png" alt="R5">
+               <img src="img/products/images/fitness/R5.png" alt="R5">
             </div>
          </a>
       </div>

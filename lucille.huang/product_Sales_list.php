@@ -74,7 +74,7 @@ $products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'sale' LIMI
       <div class="col-xs-12 col-md-6">
          <a href="product_Home_list.php" class="product">
             <div class="product-image">
-               <img src="img/products/img/sale/R4.png" alt="R4">
+               <img src="img/products/images/sale/R4.png" alt="R4">
             </div>
          </a>
       </div>
@@ -82,7 +82,7 @@ $products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'sale' LIMI
       <div class="col-xs-12 col-md-6">
          <a href="product_Fitness_list.php" class="product">
             <div class="product-image">
-               <img src="img/products/img/sale/R5.png" alt="R5">
+               <img src="img/products/images/sale/R5.png" alt="R5">
             </div>
          </a>
       </div>
