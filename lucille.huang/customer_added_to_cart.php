@@ -25,7 +25,7 @@ $cart_product = cartItemById($product->id);
    <?php include "parts/navbar.php" ?>
    
 
-   <div class="container">
+   <div class="discover2">
       <div class="card soft">
          <?php
 
@@ -38,7 +38,7 @@ $cart_product = cartItemById($product->id);
             <div class="display-flex">
                <div class="flex-none"><a class="form-button" href="javascript:window.history.back();">Back To Product</a></div>
                <div class="flex-stretch"></div>
-               <div class="flex-none"><a class="form-button" href="product_newarrivals_list.php">Continue Shopping</a></div>
+               <div class="flex-none"><a class="form-button" href="customer_bag.php">Go to your Bag</a></div>
             </div>
             <?
          }
@@ -59,7 +59,7 @@ $cart_product = cartItemById($product->id);
 
 
 
-
+    <?php include "parts/maylike.php" ?>
 
 
 

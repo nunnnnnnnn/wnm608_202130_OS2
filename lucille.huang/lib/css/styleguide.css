@@ -440,7 +440,9 @@ hr {
 
 .form-select {
    position: relative;
+   padding-top: 10%;
 }
+
 .form-select>select {
    display:inline-block;
    width:100%;
@@ -458,7 +460,7 @@ hr {
    position:absolute;
    top:50%;
    right:0.5em;
-   content:'click to select';
+   /*content:'click to select';*/
    font-family:arial;
    font-size:0.9em;
    color:var(--color-neutral-dark);

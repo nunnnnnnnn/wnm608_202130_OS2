@@ -90,12 +90,14 @@ $cart = getCartItems();
        <div class="col-xs-12 col-md-6">
          <div class="bag-price">
             <figcaption class="footer-caption">
-               <div class="bag-category">O R D E R&emsp;V A L U E</div>
-               <div class="bag-category">E S T I M A T E&emsp;T A X</div>
-               <div class="bag-category">S H I P P I N G</div>
-               <div class="bag-category">T O T A L</div>
-
-               	<a class="form-button sell" = href="product_checkout.php">C O N T I N U E&emsp;T O&emsp;C H E C K O U T</a>
+<!--               <h2>Confirm your Bag</h2> -->
+<!--                <div class="bag-category">O R D E R&emsp;V A L U E  $</div>
+               <div class="bag-category">E S T I M A T E&emsp;T A X  </div>
+               <div class="bag-category">S H I P P I N G  $</div>
+               <div class="bag-category">T O T A L  $</div>
+               <div class="bag-category"></div> -->
+                <?= cartTotals() ?>
+               	<a class="form-button sell" = href="customer_checkout.php">C O N T I N U E&emsp;T O&emsp;C H E C K O U T</a>
 
             </figcaption>
           </a>

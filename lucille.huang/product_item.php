@@ -22,7 +22,8 @@ $id = $product[0]->id;
    <?php include "parts/navbar.php" ?>
 </body>
 
-<!-- URL nav direction Last revised May 15 17:05 i am dying hahhahaha-->
+<!-- URL nav direction Last revised May15 17:05 i am dying hahhahaha-->
+
   <div class="itemnav">
      <div class="grid">
     	<div class="col-xs-12 col-md-12">
@@ -119,7 +120,7 @@ $id = $product[0]->id;
 
 <form action="customer_action.php?crud=add-to-cart" method="post">
 <input type="hidden" name="id" value=<?php echo "$id";?>>
-<select name="amount">
+<select name="amount" class="mySelectStyle">
 	 <!-- option[value='$']*10>{$} -->
 	<option value="1">1</option>
     <option value="2">2</option>

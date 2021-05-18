@@ -18,7 +18,7 @@ return '<div class="col-xs-12 col-md-3">
 
 
 function selectAmount($amount=1,$total=10) {
-   $output = "<select name='amount'>";
+   $output = "<select class='mySelectStyle' name='amount'>";
    for($i=1;$i<$total;$i++) {
       $output .= "<option ".($i==$amount?'selected':'').">$i</option>";
    }
@@ -37,18 +37,18 @@ return $r.<<<HTML
    <div class="flex-none image-thumbs">
       <img src="$o->url">
    </div>
-   <div class="flex-stretch">
-      <strong>$o->name</strong>
-      <form action="product_actions.php?crud=delete-cart-item" method="post" style="font-size:0.8em">
+   <div class="flex-stretch marginleft">
+      <h2>$o->name</h2>
+      <form action="customer_action.php?crud=delete-cart-item" method="post" style="font-size:0.8em">
          <input type="hidden" name="id" value="$o->id">
          <input type="submit" value="delete" class="form-button inline">
       </form>
    </div>
    <div class="flex-none">
       <div>&dollar;$totalfixed</div>
-      <form action="product_actions.php?crud=update-cart-item" method="post" onchange="this.submit()" style="font-size:0.8em">
+      <form action="customer_action.php?crud=update-cart-item" method="post" onchange="this.submit()" style="font-size:0.8em">
          <input type="hidden" name="id" value="$o->id">
-         <div class="form-select">
+         <div>
             $amountselect
          </div>
       </form>
@@ -63,7 +63,7 @@ $amountselect = selectAmount($o->amount,10);
 return $r.<<<HTML
 <div class="display-flex card-section">
    <div class="flex-stretch">
-      <strong>$o->title</strong>
+      <strong>$o->name</strong>
    </div>
    <div class="flex-none">
       <div>&dollar;$totalfixed</div>

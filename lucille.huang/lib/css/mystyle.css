@@ -99,6 +99,8 @@ padding-top: 0.5%;
 .bag-category {
    font-size:1em;
    color: black;
+   padding-top: 1%;
+   padding-bottom: 1%;
 }
 
 .bag3 {
@@ -119,7 +121,16 @@ padding-top: 0.5%;
 
 
 
+.card-section {
+  border-top: 1px solid #707070;
+  padding: 10px 0 10px 0;
+}
 
+
+
+.marginleft {
+  margin-left: 1em;
+}
 /*<-- footer -->*/
 
 .footercontanier {
@@ -336,5 +347,22 @@ padding-top: 0.5%;
 }
 
 
+.image-thumbs {
+  max-width: 10rem;
+}
+
+.image-thumbs > img{
+  width: 100%;
+  border-radius: 1em;
+}
+
+.mySelectStyle{
+    background-color: var(--color-white);
+    color: #111;
+    border: solid 1px;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    width: 100%;
+}
 
 

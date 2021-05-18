@@ -55,7 +55,7 @@
       <div class="container display-flex flex-align-center">
          <div style="margin: 0 auto">
             
-            <h1>Naël</h1>
+            <a href="index.php"><h2>N a ë l</h2></a>
          </div>
          <div class="pullright">
             <script>makeNav2("nav flex")</script>
