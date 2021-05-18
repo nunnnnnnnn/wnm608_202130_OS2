@@ -14,7 +14,7 @@ $res = msysqlQ("SELECT * FROM products ORDER BY id ASC LIMIT 2");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>N a ë l</title>
+   <title>N a ë l - Official</title>
    
    <?php include "parts/meta.php" ?>
 

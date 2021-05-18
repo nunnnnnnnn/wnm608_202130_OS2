@@ -60,6 +60,8 @@ $products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'Home'   LI
     // 這裡找的 //
   
 
+
+
 /*  <div class="grid gap product-list">
       <div class="col-xs-12 col-md-6">
          <a href="product_Electonics_list.php" class="product">

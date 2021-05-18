@@ -11,7 +11,7 @@ $products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'sale' LIMI
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>N a ë l - Sales</title>
+   <title>N a ë l - Sale</title>
    
    <?php include "parts/meta.php"; ?>
 
@@ -72,7 +72,7 @@ $products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'sale' LIMI
    <div class="attraction-contanier">
       <div class="grid gap product-list">
       <div class="col-xs-12 col-md-6">
-         <a href="product_Electonics_list.php" class="product">
+         <a href="product_Home_list.php" class="product">
             <div class="product-image">
                <img src="img/products/img/sale/R4.png" alt="R4">
             </div>
