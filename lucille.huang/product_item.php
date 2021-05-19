@@ -10,8 +10,10 @@ $id = $product[0]->id;
 
 <!DOCTYPE html>
 <html lang="en">
+<!-- title 這鬼東西的title到底怎麼改，還是找不到 5/18 -->
+
 <head>
-   <title>N a ë l </title>
+   <title>N a ë l - </title>
    
    <?php include "parts/meta.php" ?>
 
@@ -22,7 +24,7 @@ $id = $product[0]->id;
    <?php include "parts/navbar.php" ?>
 </body>
 
-<!-- URL nav direction Last revised May15 17:05 i am dying hahhahaha-->
+<!-- URL 刺激 nav direction Last revised May15 17:05 i am dying hahhahaha-->
 
   <div class="itemnav">
      <div class="grid">
