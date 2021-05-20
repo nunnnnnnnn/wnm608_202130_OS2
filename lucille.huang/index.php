@@ -48,7 +48,8 @@ Here is I make
          <h2>The perfect small goods, for any stay home workers </h2>
     </div> -->
 
-<!--6個滑動（缺滑動） 嗯哼～～～好難哦～動不了啊！！！！算了～～哈哈哈哈哈～～-->  
+<!--6個滑動（缺滑動） 嗯哼～～～動不了啊??????????！算了～～哈哈哈哈哈～～-->  
+
   <div class="bgcontanier">
     <div class="grid">
         <div class="col-xs-12 col-md-2">

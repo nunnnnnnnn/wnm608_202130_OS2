@@ -42,7 +42,7 @@
       <div>
       <nav class="${classes}">
          <ul>
-            <li><a href="wishlist.php">Wish List</a></li>
+            <li><a href="wishlist.php">Sign In</a></li>
             <li><a href="customer_bag.php">Bag</a></li>
          </ul>
       </nav>

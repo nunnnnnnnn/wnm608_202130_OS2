@@ -3,6 +3,19 @@
 include "lib/php/functions.php";
 include "parts/templates.php";
 // 每次點點看前面 //
+include "data/api.php";
+
+$search = isset($_GET['s']) ?$_GET['s']:"";
+
+if(isset($_GET['t'])) {
+   $result = makeStatement($_GET['t']);
+   $products = isset($result['error']) ? [] : $result;
+} else {
+   $result = makeStatement("products_all");
+   $products = isset($result['error']) ? [] : $result;
+}
+
+
 
 $products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'Home'   LIMIT 12");
 
@@ -34,10 +47,28 @@ $products = MYSQLIQuery("SELECT * FROM `products` WHERE `category` = 'Home'   LI
 </div>
 
 
+<!-- SEARCH -->
+<div class="product-contanier grid">
+   
+      <div class="col-xs-12 col-md-12">
+         <form action="product_Home_list.php" method="get" class="hotdog" style="margin-top:1em" >
+          <input type="hidden" name="t" value="search">
+          <input type="search" name="s" placeholder="Search" >
+         </form>
+       </div>
+
+
+
+</div>
+
 <!-- products     last revise May 8th 2:30am --> 
     <div class="product-contanier grid">
-      
-            
+
+    <!--(search)叫叫ABC～～～～回call no東西-->
+
+    <!--死機啊-->
+
+
 
     <?php
       $marketingBreaks = 2;

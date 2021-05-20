@@ -1,6 +1,16 @@
 <?php
 
 include "lib/php/functions.php";
+include "data/api.php";
+
+// <!--May 46min-->
+$product = makeStatement("product_by_id")[0];
+$thumbs = explode(",", $product->url);
+$thumb_elements = array_reduce($thumbs,function($r,$o){
+   return $r."<img src='/images/store/$o'>";
+});
+
+
 $product_id = $_GET['id'];
 $product = MYSQLIQuery("SELECT * FROM `products` WHERE `id` = $product_id");
 $id = $product[0]->id;
