@@ -41,7 +41,7 @@ function makeSortOptions() {
    }
 }
 
-$current_category = 'Fitness';
+$current_category = 'Electronics';
 
 if(isset($_GET['t'])) {
   if ($_GET['t'] == 'products_all'){
@@ -64,7 +64,7 @@ if(isset($_GET['t'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>N a ë l - Fitness</title>
+   <title>N a ë l - Electronics</title>
    
    <?php include "parts/meta.php"; ?>
 
@@ -76,14 +76,15 @@ if(isset($_GET['t'])) {
 </body>
 
 <!-- marketing stuff -->
-<div class="view-window2 display-flex flex-align-center flex-justify-center" style="background-image:url(img/products/images/fitness/R1.png)">
+<div class="view-window2 display-flex flex-align-center flex-justify-center" style="background-image:url(img/products/images/electronics/R1.png)">
    <div>
-      <h1 class="dark">Take a deep breathe</h1>
+      <h1 class="dark">New tech in the comfort of your home</h1>
       <div class="DiscoverButtonDiv2">
             <button>D I S C O V E R</button>
       </div>
    </div>
 </div>
+
 
 
 <!-- SEARCH -->
@@ -96,13 +97,13 @@ if(isset($_GET['t'])) {
 <div class="product-contanier grid">
    
       <div class="col-xs-12 col-md-9">
-         <form action="product_Fitness_list.php" method="get" class="hotdog" style="margin-top:1em" >
+         <form action="product_Electronics_list.php" method="get" class="hotdog" style="margin-top:1em" >
              <input type="hidden" name="t" value="search">
              <?php echo "<input type='hidden' name='category' value='$current_category'>" ?>
              <input type="hidden" name="d" value="<?=$_GET['d']?>">
              <input type="hidden" name="o" value="<?=$_GET['o']?>">
              <input type="hidden" name="l" value="<?=$_GET['l']?>">
-             <input type="search" name="s" placeholder="You can Search any items under Fitness category here" value="<?= $_GET['s'] ?>">
+             <input type="search" name="s" placeholder="You can Search any items under Electronics category here" value="<?= $_GET['s'] ?>">
          </form>
        </div>
 
@@ -110,7 +111,7 @@ if(isset($_GET['t'])) {
       <div class="col-xs-12 col-md-3">
        <div class="display-flex flex-align-center">
          <div class="flex-stretch"></div>
-         <form action="product_Fitness_list.php" method="get">
+         <form action="product_Electronics_list.php" method="get">
             <input type="hidden" name="t" value="search">
             <?php echo "<input type='hidden' name='category' value='$current_category'>" ?>
             <input type="hidden" name="s" value="<?=$_GET['s']?>">
@@ -128,7 +129,6 @@ if(isset($_GET['t'])) {
     </div>
 </div>
 
-
 <!-- < product    -->
     <div class="product-contanier grid">
             
@@ -140,6 +140,7 @@ if(isset($_GET['t'])) {
       } 
       ?>
     <!--死機啊-->
+            
 
     <?php
 
@@ -150,7 +151,7 @@ if(isset($_GET['t'])) {
       if ($i % 8 == 0) {
          echo '<div class="col-xs-12 col-md-6">
             <div class="product-image product">
-               <img src="img/products/images/fitness/R' . $marketingBreaks . '.png" alt="fitness_r' . $marketingBreaks . '">
+               <img src="img/products/images/electronics/R' . $marketingBreaks . '.png" alt="electronics_r' . $marketingBreaks . '">
             </div>
          </div>';
          $marketingBreaks++;
@@ -166,6 +167,7 @@ if(isset($_GET['t'])) {
 
 
 
+
 <!-- expore -->
     <?php include "parts/explorenael.php"; ?>
 
@@ -174,25 +176,27 @@ if(isset($_GET['t'])) {
    <div class="attraction-contanier">
       <div class="grid gap product-list">
       <div class="col-xs-12 col-md-6">
-         <a href="product_Electronics_list.php" class="product">
+         <a href="product_Home_list.php" class="product">
             <div class="product-image">
-               <img src="img/products/images/fitness/R4.png" alt="R4">
+               <img src="img/products/images/electronics/R4.png" alt="R4">
             </div>
          </a>
       </div>
 
       <div class="col-xs-12 col-md-6">
-         <a href="product_Home_list.php" class="product">
+         <a href="product_Fitness_list.php" class="product">
             <div class="product-image">
-               <img src="img/products/images/fitness/R5.png" alt="R5">
+               <img src="img/products/images/electronics/R5.png" alt="R5">
             </div>
          </a>
       </div>
+
       </div>
    </div>
 
 
 <!-- footer -->
     <?php include "parts/footer.php" ?>
+
 
 </html>

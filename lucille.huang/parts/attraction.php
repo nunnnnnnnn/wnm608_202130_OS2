@@ -2,7 +2,7 @@
 
    <div class="grid gap product-list">  
       <div class="col-xs-12 col-md-6">
-         <a href="product_Electonics_list.php" class="product">
+         <a href="product_Electronics_list.php" class="product">
             <div class="product-image">
                <img src="img/homepage/attraction1-2.png" alt="attraction1-2">
             </div>

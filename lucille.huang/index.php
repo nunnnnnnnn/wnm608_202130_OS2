@@ -48,12 +48,12 @@ Here is I make
          <h2>The perfect small goods, for any stay home workers </h2>
     </div> -->
 
-<!--6個滑動（缺滑動） 嗯哼～～～動不了啊??????????！算了～～哈哈哈哈哈～～-->  
+<!--6個滑動（缺滑動） try 10 times 動不了啊??????????！5/12算了～～哈哈哈哈哈～～-->  
 
   <div class="bgcontanier">
     <div class="grid">
         <div class="col-xs-12 col-md-2">
-         <a href="product_Home_list.php" class="product">
+         <a href="product_Home_list.php#product5" class="product">
             <figcaption class="product-caption">
                <div class="prodct-category">H O M E</div>
              </figcaption>
@@ -68,7 +68,7 @@ Here is I make
         </div>
 
         <div class="col-xs-12 col-md-2">
-         <a href="product_Home_list.php" class="product">
+         <a href="product_Home_list.php#product6" class="product">
           <figcaption class="product-caption">
                <div class="prodct-category">H O M E</div>
              </figcaption>
@@ -85,9 +85,9 @@ Here is I make
 
 
         <div class="col-xs-12 col-md-2">
-         <a href="product_Electonics_list.php" class="product">
+         <a href="product_Electronics_list.php#product6" class="product">
             <figcaption class="product-caption">
-               <div class="prodct-category">E L E C T O N I C S</div>
+               <div class="prodct-category">E L E C T R O N I C S</div>
              </figcaption>
             <div class="product-image">
                <img src="img/homepage/h2.png" alt="h2">
@@ -103,7 +103,7 @@ Here is I make
 
 
         <div class="col-xs-12 col-md-2">
-         <a href="product_newarrivals_list.php" class="product">
+         <a href="product_newarrivals_list.php#product2" class="product">
             <figcaption class="product-caption">
                <div class="prodct-category">N E W&emsp;A R R I V A L S</div>
              </figcaption>
@@ -118,7 +118,7 @@ Here is I make
         </div>
 
         <div class="col-xs-12 col-md-2">
-         <a href="product_Fitness_list.php" class="product">
+         <a href="product_Fitness_list.php#product4" class="product">
            <figcaption class="product-caption">
                <div class="prodct-category">F I T N E S S</div>
              </figcaption>
@@ -134,9 +134,9 @@ Here is I make
 
 
       <div class="col-xs-12 col-md-2">
-         <a href="product_Electonics_list.php" class="product">
+         <a href="product_Electronics_list.php#product12" class="product">
             <figcaption class="product-caption">
-               <div class="prodct-category">E L E C T O N I C S</div>
+               <div class="prodct-category">E L E C T R O N I C S</div>
              </figcaption>
             <div class="product-image">
                <img src="img/homepage/h6.jpg" alt="h6">

@@ -14,7 +14,7 @@ $cart_product = cartItemById($product->id);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>N a ë l</title>
+   <title>N a ë l - Added to Cart</title>
    
    <?php include "parts/meta.php" ?>
 
@@ -26,7 +26,7 @@ $cart_product = cartItemById($product->id);
    
 
    <div class="discover2">
-      <div class="card soft">
+      <div class="card">
          <?php
 
          if(!isset($_GET['id'])) {
@@ -49,12 +49,6 @@ $cart_product = cartItemById($product->id);
 
 
 <!--body -->
-
-
-
-
-
-
 
 
 

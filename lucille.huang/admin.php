@@ -1,10 +1,24 @@
-<!-- 壞掉啦啦 -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>N a ë l - Electronics</title>
+   
+   <?php include "parts/meta.php"; ?>
+
+</head>
+
+
+<body>
+   <?php include "parts/navbar.php"; ?>
+</body>
+</html>
 
 <?php
 
-include "../lib/php/functions.php";
-include "../data/api.php";
+include "lib/php/functions.php";
+include "data/api.php";
+
 
 // pretty_dump($_SERVER);
 // pretty_dump([$_GET,$_POST]);
@@ -16,9 +30,9 @@ $products = makeStatement("products_admin_all");
 
 
 $empty_object = (object) [
-   "name"=>"Box",
-   "price"=>"4.56",
-   "category"=>"fruit",
+   "name"=>"speaker",
+   "price"=>"150",
+   "category"=>"Electronics",
    "color"=>"black",
    "url"=>"xxxxxx.jpg",
    "thumbnail"=>"xxxxx_small.jpg",
@@ -169,7 +183,7 @@ HTML;
 <html lang="en">
 <head>
    <title>Product Administrator</title>
-   <?php include "../parts/meta.php" ?>
+   <?php include "parts/meta.php" ?>
 </head>
 <body>
    <header class="navbar">

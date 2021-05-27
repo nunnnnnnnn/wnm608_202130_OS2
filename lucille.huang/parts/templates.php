@@ -1,7 +1,7 @@
 <?php
 
 function makeProductList($product) {
-return '<div class="col-xs-12 col-md-3">
+return '<div class="col-xs-12 col-md-3" id="product'.$product->id.'">
    <a href="product_item.php?id=' . $product->id . '" class="product">
       <div class="product-image">
          <img src="' . $product->thumbnail . '" alt="">

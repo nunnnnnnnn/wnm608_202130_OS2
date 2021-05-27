@@ -3,11 +3,11 @@
 include "lib/php/functions.php";
 include "data/api.php";
 
-// <!--May 46min-->
+// <!--May 6th 46min-->
 $product = makeStatement("product_by_id")[0];
 $thumbs = explode(",", $product->url);
 $thumb_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/images/store/$o'>";
+   // return $r."<img src='$url' alt='' />";
 });
 
 
@@ -20,10 +20,10 @@ $id = $product[0]->id;
 
 <!DOCTYPE html>
 <html lang="en">
-<!-- title 這鬼東西的title到底怎麼改，還是找不到 5/18 -->
+<!-- title 這鬼東西的title到底怎麼改，還是找不到 5/18, 人生chapter9【寫code找不到系列】 -->
 
 <head>
-   <title>N a ë l - </title>
+   <title>N a ë l - <?=$product[0]->name?> </title>
    
    <?php include "parts/meta.php" ?>
 

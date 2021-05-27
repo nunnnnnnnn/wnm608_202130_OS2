@@ -58,7 +58,7 @@ function makeStatement($type) {
          break;
 
 
-// <!-- May6th 28:00 -->
+// <!-- May6th 28:00 .........categpry改成等於才會跑出來omg = var_me_pretty_death -->           
       case "search":
          if(!getRequires(['s','o','d','l']))
             return ["error"=>"Missing Properties"];
@@ -66,10 +66,10 @@ function makeStatement($type) {
             SELECT *
             FROM `products`
             WHERE
-               `name` LIKE '%{$_GET['s']}%' OR
-               `category` LIKE '%{$_GET['s']}%' OR
+               (`name` LIKE '%{$_GET['s']}%' OR
                `description` LIKE '%{$_GET['s']}%' OR
-               `color` LIKE '%{$_GET['s']}%'
+               `color` LIKE '%{$_GET['s']}%') AND
+               `category` = '{$_GET['category']}'
             ORDER BY `{$_GET['o']}` {$_GET['d']}
             LIMIT {$_GET['l']}
          ");

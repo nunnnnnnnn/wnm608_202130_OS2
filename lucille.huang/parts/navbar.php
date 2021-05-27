@@ -25,7 +25,7 @@
          <ul>
             <li><a href="product_newarrivals_list.php">&emsp;New Arrivals&emsp;&emsp;</a></li>
             <li><a href="product_Home_list.php">&emsp;Home&emsp;&emsp;</a></li>
-            <li><a href="product_Electonics_list.php">&emsp;Electronics&emsp;&emsp;</a></li>
+            <li><a href="product_Electronics_list.php">&emsp;Electronics&emsp;&emsp;</a></li>
             <li><a href="product_Fitness_list.php">&emsp;Fitness&emsp;&emsp;</a></li>
             <li><a href="product_Sales_list.php">&emsp;Sale&emsp;&emsp;</a></li>
          </ul>
@@ -42,7 +42,7 @@
       <div>
       <nav class="${classes}">
          <ul>
-            <li><a href="wishlist.php">Sign In</a></li>
+            <li><a href="customer_signin.php">Sign In</a></li>
             <li><a href="customer_bag.php">Bag</a></li>
          </ul>
       </nav>
