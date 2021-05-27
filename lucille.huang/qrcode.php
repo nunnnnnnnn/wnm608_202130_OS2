@@ -20,14 +20,13 @@ include "lib/php/functions.php"
 
 
 
-DAW2fjCckhkSYE4a41vcBnRQ1eErHjdFrt
 
 
 
     <div class="container2">
          <h2>DAW2fjCckhkSYE4a41vcBnRQ1eErHjdFrt</h2>
 <!--          <div>You bought these things</div> -->
-         <div><img src="img/payment/bitpay.png">
+         <div><img src="img/payment/qrcode.png">
          </div>
     </div>
 

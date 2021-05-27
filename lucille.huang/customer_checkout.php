@@ -103,14 +103,12 @@ include "parts/templates.php";
                   <a class="form-button sell" = href="customer_action.php?crud=reset-cart">Confirm to Purchase</a>
                </div>
                <div class="card-section ">
-                 <img src="img/payment/bitpay.png" style="cursor: pointer; max-width: 100%;height: 3em;border: solid 2px;" href="Cryptopayment.php">
+                <a href="qrcode.php">
+                 <img src="img/payment/bitpay.png" style="cursor: pointer; max-width: 100%;height: 3em;border: solid 2px;">
+               </a>
 
 
-
-
-
-
-
+                <a href="qrcode.php">
                  <img src="img/payment/dodge.png" style="cursor: pointer; max-width: 100%;height: 3em;border: solid 2px;"/>
                </div>
                <!-- <div class="card-section">
