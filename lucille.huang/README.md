@@ -9,6 +9,7 @@ http://mumumm.com/aau/wnm608/lucille.huang/index.php
 - http://mumumm.com/aau/wnm608/lucille.huang
 - http://mumumm.com/aau/wnm608/lucille.huang/recipes/index.html
 - http://mumumm.com/aau/wnm608/lucille.huang/styleguide/
+- http://mumumm.com/aau/wnm608/lucille.huang/admin.php
 
 #### Demo Links
 
