@@ -26,6 +26,34 @@ include "parts/templates.php";
             <div class="card">
             
                <a href="#" onclick="history.back();return false;">Back</a>
+
+               <h2>Your Credit Card Info</h2>
+
+               <div class="form-control">
+                 <label for="example1" class="form-label">Name on your card</label>
+                 <input id="example1" type="text" placeholder="John Smith" class="form-input">
+               </div>
+
+                <div class="form-control">
+                 <label for="example1" class="form-label">Credit card number</label>
+                 <input id="example1" type="text" placeholder="8723 2349 2345 2345" class="form-input">
+               </div>
+
+               <div class="form-control">
+                 <label for="example1" class="form-label">Month and Year</label>
+                 <input id="example1" type="text" placeholder="09/25" class="form-input">
+               </div>
+
+              <div class="form-control">
+                 <label for="example1" class="form-label">CCV</label>
+                 <input id="example1" type="text" placeholder="342" class="form-input">
+               </div>
+               
+
+
+
+
+
                <h2>Shipping and Billing Details </h2>
 
                <div class="form-control">
@@ -64,27 +92,7 @@ include "parts/templates.php";
                </div>
 
 
-               <h2>Your Credit Card Info</h2>
-
-               <div class="form-control">
-                 <label for="example1" class="form-label">Name on your card</label>
-                 <input id="example1" type="text" placeholder="John Smith" class="form-input">
-               </div>
-
-                <div class="form-control">
-                 <label for="example1" class="form-label">Credit card number</label>
-                 <input id="example1" type="text" placeholder="8723 2349 2345 2345" class="form-input">
-               </div>
-
-               <div class="form-control">
-                 <label for="example1" class="form-label">Month and Year</label>
-                 <input id="example1" type="text" placeholder="09/25" class="form-input">
-               </div>
-
-              <div class="form-control">
-                 <label for="example1" class="form-label">CCV</label>
-                 <input id="example1" type="text" placeholder="342" class="form-input">
-               </div>
+               
             </div>
          </div>
 

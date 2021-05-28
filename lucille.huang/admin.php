@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>N a ë l - Electronics</title>
+   <title>N a ë l - Administration</title>
    
    <?php include "parts/meta.php"; ?>
 
@@ -30,13 +30,13 @@ $products = makeStatement("products_admin_all");
 
 
 $empty_object = (object) [
-   "name"=>"speaker",
-   "price"=>"150",
-   "category"=>"Electronics",
+   "name"=>"Candle Lantern",
+   "price"=>"29.99",
+   "category"=>"Home",
    "color"=>"black",
-   "url"=>"xxxxxx.jpg",
+   "url"=>"img/products/images/home/h13.png",
    "thumbnail"=>"xxxxx_small.jpg",
-   "description"=>"I only know the durian because of The Legend of Zelda.",
+   "description"=>"Large lantern",
    "quantity"=>"10"
 ];
 
@@ -49,6 +49,7 @@ switch(@$_GET['crud']) {
       break;
    case 'create':
       $result = makeStatement("product_insert");
+      // echo "<script>console.log('Debug Objects: " . $result . "' );</script>";
       header("location:{$_SERVER['PHP_SELF']}?id=".$result->insert_id);
       break;
    case 'delete':
@@ -89,15 +90,15 @@ $id = $_GET['id'];
 $addoredit = $id=="new" ? 'Add' : 'Edit';
 $createorupdate = $id=="new" ? 'create' : 'update';
 $showvisitlink = $id!="new" ? "<div><a href='product_item.php?id=$id' class='form-button'>Visit</a></div>" : "";
-
+// echo pretty_dump($product);
 echo <<<HTML
 <div class="grid gap">
 <div class="col-xs-12">
 <div class="card soft">
 <nav class="nav pills display-flex">
-   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}"><img src="img/icon/arrow-left.svg" class="icon" style="font-size:1.5em"></a></div>
+   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}"><img src="img/icon/back.png" class="icon" style="font-size:1.5em"></a></div>
    <div class="flex-stretch"></div>
-   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete"><img src="img/icon/trash.svg" class="icon" style="font-size:1.5em"></a></div>
+   <div class="flex-none"><a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete"><img src="img/icon/delete.png" class="icon" style="font-size:1.5em"></a></div>
 </nav>
 </div>
 </div>
@@ -114,9 +115,7 @@ echo <<<HTML
       </div>
       <div>
          <strong>Color</strong>
-         <div>
-            $product->color
-         </div>
+         <div>$product->color</div>
       </div>
       <div>
          <strong>Description</strong>
@@ -139,8 +138,8 @@ echo <<<HTML
       <h2>$addoredit Product</h2>
       <input type="hidden" name="id" value="$id">
       <div class="form-control">
-         <label class="form-label" for="product-title">Title</label>
-         <input class="form-input" type="text" id="product-title" name="product-title" value="$product->name">
+         <label class="form-label" for="product-name">Name</label>
+         <input class="form-input" type="text" id="product-name" name="product-name" value="$product->name">
       </div>
       <div class="form-control">
          <label class="form-label" for="product-price">Price</label>
@@ -152,15 +151,15 @@ echo <<<HTML
       </div>
       <div class="form-control">
          <label class="form-label" for="product-description">Description</label>
-         <textarea class="form-input" id="product-description" name="product-description">$product->description</textarea>
+         <textarea class="form-input" id="product-description" name="product-description" value="$product->description">$product->description</textarea>
       </div>
       <div class="form-control">
-         <label class="form-label" for="product-image_thumb">Color</label>
-         <input class="form-input" type="text" id="product-image_thumb" name="product-image_thumb" value="$product->color">
+         <label class="form-label" for="product-color">Color</label>
+         <input class="form-input" type="text" id="product-color" name="product-color" value="$product->color">
       </div>
       <div class="form-control">
-         <label class="form-label" for="product-image_other">Image</label>
-         <input class="form-input" type="text" id="product-image_other" name="product-image_other" value="$product->url">
+         <label class="form-label" for="product-url">Image</label>
+         <input class="form-input" type="text" id="product-url" name="product-url" value="$product->url">
       </div>
       <div class="form-control">
          <label class="form-label" for="product-quantity">Quantity</label>

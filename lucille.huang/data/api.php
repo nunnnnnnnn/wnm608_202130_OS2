@@ -82,22 +82,24 @@ function makeStatement($type) {
          $conn = MYSQLIConn();
          $stmt = $conn->prepare("UPDATE `products`
             SET
-               `title` = ?,
+               `name` = ?,
                `price` = ?,
                `category` = ?,
-               `image_other` = ?,
-               `image_thumb` = ?,
+               `color` = ?,
+               `url` = ?,
+               `thumbnail` = ?,
                `description` = ?,
                `quantity` = ?,
                `date_modify` = NOW()
             WHERE `id` = ?
             ");
          $stmt->bind_param("sdssssii",
-            $_POST['product-title'],
+            $_POST['product-name'],
             $_POST['product-price'],
             $_POST['product-category'],
-            $_POST['product-image_other'],
-            $_POST['product-image_thumbnail'],
+            $_POST['product-color'],
+            $_POST['product-url'],
+            $_POST['product-thumbnail'],
             $_POST['product-description'],
             $_POST['product-quantity'],
             $_POST['id']
@@ -107,14 +109,15 @@ function makeStatement($type) {
          
       /* MAKE SURE THESE COLUMNS MATCH THE COLUMNS IN YOUR PHPMYADMIN */
       case "product_insert":
+         // echo "<script>console.log('". json_encode($_POST) ."');</script>";
          $conn = MYSQLIConn();
          $stmt = $conn->prepare("INSERT INTO `products`
             (
                `name`,
                `price`,
                `category`,
-               `image_other`,
-               `image_thumbnail`,
+               `color`,
+               `url`,
                `description`,
                `quantity`,
                `date_create`,
@@ -134,11 +137,11 @@ function makeStatement($type) {
             )
             ");
          $stmt->bind_param("sdssssi",
-            $_POST['product-title'],
+            $_POST['product-name'],
             $_POST['product-price'],
             $_POST['product-category'],
-            $_POST['product-image_other'],
-            $_POST['product-image_thumb'],
+            $_POST['product-color'],
+            $_POST['product-url'],
             $_POST['product-description'],
             $_POST['product-quantity']
          );
